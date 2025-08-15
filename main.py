@@ -1,7 +1,5 @@
 import json
-import tkinter as tk
 import streamlit as st
-from tkinter import filedialog
 from metricas_base import METRICAS
 from common import configurar_metricas_comuns
 from r1 import atualizar_metricas as atualizar_metricas_r1
@@ -20,20 +18,6 @@ PDF_OUTPUT = "cronograma.pdf"
 
 def carregar_catalogo(path=JSON_PATH):
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-def selecionar_respostas_aluno():
-    root = tk.Tk()
-    root.withdraw()
-    caminho_arquivo = filedialog.askopenfilename(
-        title="Selecione o arquivo JSON do aluno",
-        initialdir=JSON_ALUNOS_PATH,
-        filetypes=[("Arquivos JSON", "*.json")]
-    )
-    if not caminho_arquivo:
-        print("Nenhum arquivo selecionado.")
-        return None
-    with open(caminho_arquivo, "r", encoding="utf-8") as f:
         return json.load(f)
 
 def calcular_pesos_aulas(catalogo, metricas_aluno):
@@ -115,7 +99,7 @@ if __name__ == "__main__":
 
     
     catalogo = carregar_catalogo()
-    respostas_aluno = selecionar_respostas_aluno()
+    respostas_aluno = 0
     if not respostas_aluno:
         exit()
     

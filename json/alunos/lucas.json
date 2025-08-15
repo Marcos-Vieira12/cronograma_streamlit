@@ -1,0 +1,29 @@
+{
+  "respondent_id": "xOPZMk",
+  "nivel": "R3",
+  "email": "lucasmradiologia@gmail.com",
+  "submitted_at": "2025-08-06 14:13:39",
+  "respostas": {
+    "Quais os seus objetivos com o curso RadioClub?": [
+      "Complementar minha formação como residente de radiologia",
+      "Me atualizar com as inovações e protocolos mais recentes"
+    ],
+    "Em qual hospital você faz/fez a residência?": "IMIP",
+    "Já decidiu qual área quer seguir no R4/Fellow?": "Medicina Interna",
+    "Quais exames você tem mais contato hoje na residência e gostaria de aprofundar?": [
+      "RX",
+      "USG Geral",
+      "TC",
+      "RM",
+      "Doppler"
+    ],
+    "Quais subespecialidades você mais tem contato na Residência e gostaria de aprofundar?": [
+      "Tórax",
+      "Abdome",
+      "Pediatria"
+    ],
+    "Tem algum exame de imagem ou subespecialidade específica que você quer dominar ou revisar agora no R3? Ou algo que você sente que ficou pra trás do R1/R2?": "Cabeça e pescoço",
+    "Quanto tempo, por semana, você consegue dedicar aos estudos com o RadioClub?": "Mais de 4h",
+    "numero_semanas": 12
+  }
+}

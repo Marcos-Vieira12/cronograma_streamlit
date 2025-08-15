@@ -1,0 +1,31 @@
+{
+  "respondent_id": "Wx5oqL",
+  "nivel": "R3",
+  "email": "sabrinaclara@live.com",
+  "submitted_at": "2025-08-04 15:15:36",
+  "respostas": {
+    "Quais os seus objetivos com o curso RadioClub?": [
+      "Melhorar interpretação de exames no dia a dia",
+      "Complementar minha formação como residente de radiologia",
+      "Me atualizar com as inovações e protocolos mais recentes",
+      "Participar ativamente da comunidade profissional",
+      "Praticar com casos reais e discussões clínicas"
+    ],
+    "Em qual hospital você faz/fez a residência?": "Hospital Santa Marcelina",
+    "Já decidiu qual área quer seguir no R4/Fellow?": "Msk",
+    "Quais exames você tem mais contato hoje na residência e gostaria de aprofundar?": [
+      "TC",
+      "RM",
+      "AngioTC / AngioRM"
+    ],
+    "Quais subespecialidades você mais tem contato na Residência e gostaria de aprofundar?": [
+      "Neuro",
+      "Tórax",
+      "Abdome",
+      "Musculoesquelético",
+      "Oncologia"
+    ],
+    "Quanto tempo, por semana, você consegue dedicar aos estudos com o RadioClub?": "Até 1h",
+    "numero_semanas": 12
+  }
+}

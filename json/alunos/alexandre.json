@@ -1,0 +1,31 @@
+{
+  "respondent_id": "WxNEXv",
+  "nivel": "R1",
+  "email": "alexandrehugo@me.com",
+  "submitted_at": "2025-08-04 19:53:47",
+  "respostas": {
+    "Quais os seus objetivos com o curso RadioClub?": [
+      "Melhorar interpretação de exames no dia a dia",
+      "Complementar minha formação como residente de radiologia",
+      "Me atualizar com as inovações e protocolos mais recentes",
+      "Participar ativamente da comunidade profissional",
+      "Praticar com casos reais e discussões clínicas"
+    ],
+    "Em qual hospital você faz/fez a residência?": "Mae de Deus",
+    "Quais exames de imagem você já tem contato na prática ou vai ter nesse início de R1?": [
+      "RX",
+      "USG",
+      "TC",
+      "RM"
+    ],
+    "Quais exames de imagem sente mais dificuldade no momento?": "Tc /rm",
+    "Quais subespecialidades você vai ter mais contato na Residência?": [
+      "Neuro",
+      "Tórax",
+      "Musculoesquelético",
+      "Oncologia"
+    ],
+    "Quanto tempo, por semana, você consegue dedicar aos estudos com o RadioClub?": "Entre 3h e 4h",
+    "numero_semanas": 12
+  }
+}

@@ -1,0 +1,208 @@
+[{
+"nivel": "R1",
+"Quais os seus objetivos com o curso RadioClub?": [
+"Aprofundar conhecimentos na minha subespecialidade atual",
+"Expandir para novas subespecialidades da radiologia",
+"Melhorar interpretação de exames no dia a dia",
+"Desenvolver skills para ensino/supervisão de residentes",
+"Complementar minha formação como residente de radiologia",
+"Me atualizar com as inovações e protocolos mais recentes",
+"Participar ativamente da comunidade profissional",
+"Praticar com casos reais e discussões clínicas",
+"Outro"
+],
+"Em qual hospital você faz/fez a residência?": "aberta",
+
+"Quais exames de imagem você já tem contato na prática ou vai ter nesse início de R1?": [
+"RX",
+"USG",
+"Densitometria",
+"Mamografia",
+"TC",
+"RM",
+"Outros"
+],
+"Quais exames de imagem sente mais dificuldade no momento?": "aberta",
+"Quais subespecialidades você vai ter mais contato na Residência?": [
+"Neuro",
+"Tórax",
+"Abdome",
+"Mama",
+"Musculoesquelético",
+"Cabeça e Pescoço",
+"Pediatria",
+"Gineco/Obstetrícia",
+"Urologia",
+"Oncologia",
+"Ainda não sei",
+"Outros"
+],
+"Quais temas você está vendo ou vai ver no primeiro ano de Residência?": "aberta",
+"Quanto tempo, por semana, você consegue dedicar aos estudos com o RadioClub?": [
+"Até 1h",
+"1h a 2h",
+"2h a 3h",
+"3h a 4h",
+"Mais de 4h"
+],
+"Tem algo adicional que você gostaria de mencionar, ou acredita ser relevante sabermos, para montarmos seu cronograma? Fique à vontade!": "aberta",
+"numero_semanas": "numerical"
+},{
+"nivel": "R2",
+"Quais os seus objetivos com o curso RadioClub?": [
+"Aprofundar conhecimentos na minha subespecialidade atual",
+"Expandir para novas subespecialidades da radiologia",
+"Melhorar interpretação de exames no dia a dia",
+"Desenvolver skills para ensino/supervisão de residentes",
+"Complementar minha formação como residente de radiologia",
+"Me atualizar com as inovações e protocolos mais recentes",
+"Participar ativamente da comunidade profissional",
+"Praticar com casos reais e discussões clínicas",
+"Outro"
+],
+"Em qual hospital você faz/fez a residência?": "aberta",
+"Quais exames você mais lauda/interpreta e tem contato no R2 atualmente?": [
+"RX",
+"USG",
+"Densitometria Óssea",
+"Mamografia",
+"TC",
+"RM",
+"Doppler",
+"AngioTC e AngioRM",
+"Fluoroscopia",
+"Contrastados",
+"Outros"],
+"Quais desses exames de imagem sente mais dificuldade no momento? Algo passou batido no R1?": "aberta",
+"Quais subespecialidades você tem mais contato na Residência?": [
+"Neuro",
+"Tórax",
+"Abdome",
+"Mama",
+"Musculoesquelético",
+"Cabeça e Pescoço",
+"Pediatria",
+"Gineco/Obstetrícia",
+"Urologia",
+"Oncologia"
+],
+"Tem alguma subespecialidade que quer aprofundar mais ou revisar agora no R2?": "aberta",  
+"Quanto tempo, por semana, você consegue dedicar aos estudos com o RadioClub?": [
+"Até 1h",
+"1h a 2h",
+"2h a 3h",
+"3h a 4h",
+"Mais de 4h"
+],
+"Tem algo adicional que você gostaria de mencionar, ou acredita ser relevante sabermos, para montarmos seu cronograma? Fique à vontade!": "aberta",
+"numero_semanas": "numerical"
+},{
+"nivel": "R3",
+"Quais os seus objetivos com o curso RadioClub?": [
+"Aprofundar conhecimentos na minha subespecialidade atual",
+"Expandir para novas subespecialidades da radiologia",
+"Melhorar interpretação de exames no dia a dia",
+"Desenvolver skills para ensino/supervisão de residentes",
+"Complementar minha formação como residente de radiologia",
+"Me atualizar com as inovações e protocolos mais recentes",
+"Participar ativamente da comunidade profissional",
+"Praticar com casos reais e discussões clínicas",
+"Outro"
+],
+"Em qual hospital você faz/fez a residência?": "aberta",
+"Já decidiu qual área quer seguir no R4/Fellow?": [
+    "ainda não tenho certeza",
+    "sim, qual?"
+],
+"Quais exames você tem mais contato hoje na residência e gostaria de aprofundar?": [
+"RX",
+"USG Geral",
+"Densitometria Óssea",
+"Mamografia",
+"TC",
+"RM",
+"Doppler",
+"AngioTC / AngioRM",
+"Fluoroscopia",
+"Contrastados",
+"PET-CT",
+"HSG",
+"Outros"
+],
+"Quais subespecialidades você mais tem contato na Residência e gostaria de aprofundar?": [
+"Neuro",
+"Tórax",
+"Abdome",
+"Mama",
+"Musculoesquelético",
+"Cabeça e Pescoço",
+"Pediatria",
+"Gineco/Obstetrícia",
+"Urologia",
+"Oncologia"
+],
+"Tem algum exame de imagem ou subespecialidade específica que você quer dominar ou revisar agora no R3? Ou algo que você sente que ficou pra trás do R1/R2?": "aberta",
+"Quanto tempo, por semana, você consegue dedicar aos estudos com o RadioClub?": [
+"Até 1h",
+"1h a 2h",
+"2h a 3h",
+"3h a 4h",
+"Mais de 4h"
+],
+"Tem algo adicional que você gostaria de mencionar, ou acredita ser relevante sabermos, para montarmos seu cronograma? Fique à vontade!": "aberta",
+"numero_semanas": "numerical"
+},{
+"nivel": "R4 / medico radiologista",
+"Quais os seus objetivos com o curso RadioClub?": [
+"Aprofundar conhecimentos na minha subespecialidade atual",
+"Expandir para novas subespecialidades da radiologia",
+"Melhorar interpretação de exames no dia a dia",
+"Desenvolver skills para ensino/supervisão de residentes",
+"Complementar minha formação como residente de radiologia",
+"Me atualizar com as inovações e protocolos mais recentes",
+"Participar ativamente da comunidade profissional",
+"Praticar com casos reais e discussões clínicas",
+"Outro"
+],
+"Em qual hospital você faz/fez a residência?": "aberta",
+"Há quanto tempo terminou a residência?": [
+"Menos de 1 ano",
+"Entre 1 e 3 anos",
+"Entre 3 e 5 anos",
+"Há mais de 5 anos"
+],
+"Quais exames você realiza na sua prática atual e gostaria de revisar ou de se atualizar?": [
+"RX Geral",
+"USG Geral",
+"Densitometria Óssea",
+"Mamografia",
+"TC",
+"RM",
+"Doppler",
+"AngioTC / AngioRM",
+"Fluoroscopia",
+"Contrastados",
+"PET-CT",
+"HSG",
+"Outros. Quais?"
+],
+"Em quais subespecialidades você tem mais interesse revisar ou se aprofundar agora?": [
+"Neuro",
+"Tórax",
+"Abdome",
+"Mama",
+"Musculoesquelético",
+"Cabeça e Pescoço",
+"Pediatria",
+"Gineco/Obstetrícia",
+"Urologia",
+"Oncologia",
+"Intervenção",
+"Cardiovascular"
+],
+"No RadioClub, você pretende:": [
+"Revisar conteúdos que não pratica há um tempo",
+"Se atualizar com temas novos na Radiologia",
+"Aprimorar uma nova subespecialidade de interesse",
+"Ganhar mais segurança em exames e temas específicos",
+"Ter uma rotina organizada de estudos"]}]

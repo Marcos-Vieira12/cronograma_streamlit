@@ -1,0 +1,25 @@
+{
+  "respondent_id": "2QJaqj",
+  "nivel": "R1",
+  "email": "andre@teste.com",
+  "submitted_at": "2025-08-06 13:20:21",
+  "respostas": {
+    "Quais os seus objetivos com o curso RadioClub?": [
+      "Aprofundar conhecimentos na minha subespecialidade atual"
+    ],
+    "Em qual hospital você faz/fez a residência?": "Teste",
+    "Quais exames de imagem você já tem contato na prática ou vai ter nesse início de R1?": [
+      "TC"
+    ],
+    "Quais exames de imagem sente mais dificuldade no momento?": "tc",
+    "Quais subespecialidades você vai ter mais contato na Residência?": [
+      "Tórax"
+    ],
+    "Quais temas você está vendo ou vai ver no primeiro ano de Residência?": [
+      "pneumonia"
+    ],
+    "Quanto tempo, por semana, você consegue dedicar aos estudos com o RadioClub?": "Até 1h",
+    "Tem algo adicional que você gostaria de mencionar, ou acredita ser relevante sabermos, para montarmos seu cronograma? Fique à vontade!": "não sei",
+    "numero_semanas": 12
+  }
+}

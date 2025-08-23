@@ -23,7 +23,7 @@ def atualizar_metricas(respostas_aluno, metricas):
             elif exame == "Doppler":
                 metricas["exame_doppler"] += 2
             elif exame == "AngioTC / AngioRM":
-                metricas["exame_angiotc"] += 2
+                metricas["exame_angio"] += 2
             elif exame == "Fluoroscopia":
                 metricas["exame_fluoroscopia"] += 2
             elif exame == "Contrastados":
@@ -87,32 +87,29 @@ def atualizar_metricas(respostas_aluno, metricas):
         # reciclagem estruturada + diretrizes atuais
 
 
-    # ==== R4 — Pergunta: "No RadioClub, você pretende:" ====
-    pretende = r.get("No RadioClub, você pretende:")
-    if pretende:
-        if isinstance(pretende, str):
-            pretende_list = [p.strip() for p in pretende.split(",") if p.strip()]
-        else:
-            pretende_list = pretende
+    # # ==== R4 — Pergunta: "No RadioClub, você pretende:" ====
+    # pretende = r.get("No RadioClub, você pretende:")
+    # if pretende:
+    #     if isinstance(pretende, str):
+    #         pretende_list = [p.strip() for p in pretende.split(",") if p.strip()]
+    #     else:
+    #         pretende_list = pretende
 
-        for opc in pretende_list:
-            if opc == "Revisar conteúdos que não pratica há um tempo":
-                metricas["fundamentos_basicos"] += 0.8
-                metricas["foco_subespecialidade"] += 0.2
+    #     for opc in pretende_list:
+    #         if opc == "Revisar conteúdos que não pratica há um tempo":
+    #             metricas["fundamentos_basicos"] += 0.8
+    #             metricas["foco_subespecialidade"] += 0.2
 
-            elif opc == "Se atualizar com temas novos na Radiologia":
-                metricas["atualizacoes_novos_protocolos"] += 1
+    #         elif opc == "Se atualizar com temas novos na Radiologia":
+    #             metricas["atualizacoes_novos_protocolos"] += 1
 
-            elif opc == "Aprimorar uma nova subespecialidade de interesse":
-                metricas["foco_subespecialidade"] += 0.3
+    #         elif opc == "Aprimorar uma nova subespecialidade de interesse":
+    #             metricas["foco_subespecialidade"] += 0.3
 
-            elif opc == "Ganhar mais segurança em exames e temas específicos":
-                metricas["casos_clinicos_complexos"] += 0.5
-                metricas["casos_clinicos_simples"] += 0.5
-                metricas["foco_exames"] += 0.3
-                metricas["erros_pitfalls"] += 0.3
+    #         elif opc == "Ganhar mais segurança em exames e temas específicos":
 
-            elif opc == "Ter uma rotina organizada de estudos":
-                metricas["urgencia_praticidade"] += 0
+
+    #         elif opc == "Ter uma rotina organizada de estudos":
+    #             metricas["urgencia_praticidade"] += 0
 
     return metricas

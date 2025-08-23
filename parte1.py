@@ -1,5 +1,5 @@
 # parte1.py
-import streamlit as st
+import streamlit as st # type: ignore
 
 OBJETIVOS = [
     "Aprofundar conhecimentos na minha subespecialidade atual",

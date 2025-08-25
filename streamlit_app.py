@@ -130,7 +130,7 @@ if gerar:
             numero_semanas=numero_semanas,
             tempo_min_semana=tempo_min_semana,
             frac_limite_max=0.90,
-            peso_min_intermediario=1.0
+            peso_min_intermediario=3.5
         )
 
         # 6) Exibir cronograma
@@ -145,50 +145,81 @@ if gerar:
                  for idx, a in enumerate(semana)]
             )
 
-        # 7) PDF download (mantém como já estava)
-        try:
-            from reportlab.lib.pagesizes import A4 # type: ignore
-            from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer, PageBreak # type: ignore
-            from reportlab.lib import colors # type: ignore
-            from reportlab.lib.styles import getSampleStyleSheet # type: ignore
+        # 7) Downloads: PDF e Relatório (.zip)
+        col_pdf, col_zip = st.columns(2)
 
-            buffer = io.BytesIO()
-            doc = SimpleDocTemplate(buffer, pagesize=A4)
-            styles = getSampleStyleSheet()
-            elementos = []
+        # --------- Coluna PDF ---------
+        with col_pdf:
+            try:
+                from reportlab.lib.pagesizes import A4  # type: ignore
+                from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer, PageBreak  # type: ignore
+                from reportlab.lib import colors  # type: ignore
+                from reportlab.lib.styles import getSampleStyleSheet  # type: ignore
 
-            for i, semana in enumerate(cronograma, 1):
-                elementos.append(Paragraph(f"Semana {i}", styles["Heading2"]))
-                data = [["#", "Módulo", "Tema", "Minutos"]]
-                total_semana = 0
-                for idx, aula in enumerate(semana, 1):
-                    data.append([idx, aula["module_name"], aula["lesson_theme"], aula["duration_min"]])
-                    total_semana += aula["duration_min"]
+                buffer = io.BytesIO()
+                doc = SimpleDocTemplate(buffer, pagesize=A4)
+                styles = getSampleStyleSheet()
+                elementos = []
 
-                tabela = Table(data, repeatRows=1)
-                tabela.setStyle(TableStyle([
-                    ("BACKGROUND", (0, 0), (-1, 0), colors.grey),
-                    ("TEXTCOLOR", (0, 0), (-1, 0), colors.whitesmoke),
-                    ("ALIGN", (0, 0), (-1, -1), "LEFT"),
-                    ("GRID", (0, 0), (-1, -1), 0.5, colors.black),
-                ]))
-                elementos.append(tabela)
-                elementos.append(Spacer(1, 24))
-                elementos.append(Paragraph(f"Tempo total da semana: {total_semana} minutos", styles["Normal"]))
+                for i, semana in enumerate(cronograma, 1):
+                    elementos.append(Paragraph(f"Semana {i}", styles["Heading2"]))
+                    data = [["#", "Módulo", "Tema", "Minutos"]]
+                    total_semana = 0
+                    for idx, aula in enumerate(semana, 1):
+                        data.append([idx, aula["module_name"], aula["lesson_theme"], aula["duration_min"]])
+                        total_semana += aula["duration_min"]
 
-                if i < len(cronograma):
-                    elementos.append(PageBreak())
+                    tabela = Table(data, repeatRows=1)
+                    tabela.setStyle(TableStyle([
+                        ("BACKGROUND", (0, 0), (-1, 0), colors.grey),
+                        ("TEXTCOLOR", (0, 0), (-1, 0), colors.whitesmoke),
+                        ("ALIGN", (0, 0), (-1, -1), "LEFT"),
+                        ("GRID", (0, 0), (-1, -1), 0.5, colors.black),
+                    ]))
+                    elementos.append(tabela)
+                    elementos.append(Spacer(1, 24))
+                    elementos.append(Paragraph(f"Tempo total da semana: {total_semana} minutos", styles["Normal"]))
 
-            doc.build(elementos)
-            pdf_bytes = buffer.getvalue()
-            buffer.close()
+                    if i < len(cronograma):
+                        elementos.append(PageBreak())
 
+                doc.build(elementos)
+                pdf_bytes = buffer.getvalue()
+                buffer.close()
+
+                st.download_button(
+                    label="Baixar PDF do Cronograma",
+                    data=pdf_bytes,
+                    file_name="cronograma.pdf",
+                    mime="application/pdf"
+                )
+            except Exception as e:
+                st.warning(
+                    f"Não foi possível gerar o PDF para download no Streamlit ({e}). "
+                    f"O cronograma foi gerado e exibido acima normalmente."
+                )
+
+        # --------- Coluna ZIP (respostas + catálogo de pesos) ---------
+        with col_zip:
+            import json, zipfile
+            from datetime import datetime
+
+            respostas_json = json.dumps(st.session_state.form, ensure_ascii=False, indent=2)
+            catalogo_pesos_json = json.dumps(pesos_aulas, ensure_ascii=False, indent=2)
+
+            zip_buffer = io.BytesIO()
+            with zipfile.ZipFile(zip_buffer, mode="w", compression=zipfile.ZIP_DEFLATED) as zf:
+                zf.writestr("respostas_aluno.json", respostas_json)
+                zf.writestr("catalogo_pesos_aulas.json", catalogo_pesos_json)
+
+            zip_bytes = zip_buffer.getvalue()
+            zip_buffer.close()
+
+            ts = datetime.now().strftime("%Y%m%d-%H%M%S")
             st.download_button(
-                label="Baixar PDF do Cronograma",
-                data=pdf_bytes,
-                file_name="cronograma.pdf",
-                mime="application/pdf"
+                label="Gerar Relatório (.zip)",
+                data=zip_bytes,
+                file_name=f"relatorio_radioclub_{ts}.zip",
+                mime="application/zip",
+                type="secondary",
             )
-        except Exception as e:
-            st.warning(f"Não foi possível gerar o PDF para download no Streamlit ({e}). "
-                       f"O cronograma foi gerado e exibido acima normalmente.")

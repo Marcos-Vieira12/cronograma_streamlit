@@ -31,12 +31,29 @@ def calcular_pesos_aulas(catalogo, metricas_aluno):
     resultado = []
     for aula in catalogo:
         score = 0
-        for metrica, valor_aula in aula.get("metrics", {}).items():
+        metrics_aula = aula.get("metrics", {})
+
+        # verifica se alguma subespecialidade específica dessa aula foi selecionada pelo usuário
+        subesp_especifica_validada = any(
+            m.startswith("subespecialidade_")
+            and m != "subespecialidade_geral"
+            and metricas_aluno.get(m, 0) > 0  # só conta se o aluno de fato marcou
+            for m in metrics_aula
+        )
+
+        for metrica, valor_aula in metrics_aula.items():
             valor_aluno = metricas_aluno.get(metrica, 0)
+
+            if metrica == "subespecialidade_geral" and subesp_especifica_validada:
+                # aplica penalização de -0.2 em vez de somar normal
+                score += -0.2
+                continue
+
             if metrica in subespecialidades:
                 valor_aluno *= (1 + foco_subesp)
             elif metrica in exames:
                 valor_aluno *= (1 + foco_exames)
+
             score += valor_aula * valor_aluno
 
         resultado.append({
@@ -46,6 +63,7 @@ def calcular_pesos_aulas(catalogo, metricas_aluno):
             "peso": round(score, 4),
         })
     return resultado
+
 
 
 def salvar_catalogo_pesos(pesos_aulas, output_path=OUTPUT_PATH):
@@ -60,7 +78,7 @@ def gerar_cronograma(
     numero_semanas,
     tempo_min_semana=0,
     frac_limite_max=0.90,
-    peso_min_intermediario=1.0,
+    peso_min_intermediario=3.5,
 ):
     aulas_ordenadas = sorted(pesos_aulas, key=lambda x: x["peso"], reverse=True)
     cronograma = [[] for _ in range(numero_semanas)]

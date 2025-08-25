@@ -37,7 +37,7 @@ def configurar_metricas_comuns(metricas: Dict[str, float], respostas_aluno: Dict
     if "Aprofundar conhecimentos na minha subespecialidade atual" in objetivos:
         metricas["foco_subespecialidade"] += 0.5
     if "Me atualizar com as inovações e protocolos mais recentes" in objetivos:
-        metricas["exame_petct"] += 1.5
+        metricas["exame_petct"] += 4
     if "Praticar com casos reais e discussões clínicas" in objetivos:
         metricas["discussoes_ao_vivo"] += 2
 
@@ -63,13 +63,13 @@ def configurar_metricas_comuns(metricas: Dict[str, float], respostas_aluno: Dict
     # Temas extras
     temas_extras = _to_list(r.get("temas_extras"))
     if "Inglês médico" in temas_extras:
-        metricas["subespecialidade_ingles"] += 2
+        metricas["subespecialidade_ingles"] += 4
     if "Como montar sua workstation" in temas_extras:
-        metricas["subespecialidade_workstation"] += 2
+        metricas["subespecialidade_workstation"] += 4
     if "Finanças médicas" in temas_extras:
-        metricas["subespecialidade_financas"] += 2
+        metricas["subespecialidade_financas"] += 4
     if "Trabalhos científicos" in temas_extras:
-        metricas["subespecialidade_pesquisa"] += 2
+        metricas["subespecialidade_pesquisa"] += 4
     if "Inteligência artificial" in temas_extras:
-        metricas["subespecialidade_inteligencia_artificial"] += 2
+        metricas["subespecialidade_inteligencia_artificial"] += 4
     # "Revalidação de diploma" e "Prefiro focar no conteúdo técnico" -> sem impacto

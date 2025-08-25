@@ -486,7 +486,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -500,7 +500,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -514,7 +514,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -528,7 +528,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_neuro": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -542,7 +542,7 @@
       "fundamentos_basicos": 1.0,
       "exame_angio": 1.0,
       "subespecialidade_cabeca_pescoco": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -556,7 +556,7 @@
       "fundamentos_basicos": 1.0,
       "exame_angio": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -570,7 +570,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -585,7 +585,7 @@
       "exame_usg": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -599,7 +599,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -613,7 +613,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -627,7 +627,7 @@
       "fundamentos_basicos": 1.0,
       "exame_angio": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -641,7 +641,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -655,7 +655,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -669,7 +669,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -683,7 +683,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -698,7 +698,7 @@
       "exame_rx": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -712,7 +712,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -727,7 +727,7 @@
       "exame_rx": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -741,7 +741,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -755,7 +755,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -769,7 +769,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -784,7 +784,7 @@
       "exame_rx": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -798,7 +798,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -812,7 +812,7 @@
       "fundamentos_basicos": 1.0,
       "exame_angio": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -826,7 +826,7 @@
       "fundamentos_basicos": 1.0,
       "exame_angio": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -840,7 +840,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_neuro": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -854,7 +854,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_neuro": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -868,7 +868,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_neuro": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -882,7 +882,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_neuro": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -896,7 +896,7 @@
       "fundamentos_basicos": 1.0,
       "exame_rx": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -910,7 +910,7 @@
       "fundamentos_basicos": 1.0,
       "exame_rx": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -924,7 +924,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -938,7 +938,7 @@
       "fundamentos_basicos": 1.0,
       "exame_rx": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -952,7 +952,7 @@
       "fundamentos_basicos": 1.0,
       "exame_rx": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -966,7 +966,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -981,7 +981,7 @@
       "exame_rx": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -995,7 +995,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -1010,7 +1010,7 @@
       "exame_rx": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -1025,7 +1025,7 @@
       "exame_rx": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -1039,7 +1039,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_neuro": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -1053,7 +1053,7 @@
       "fundamentos_basicos": 1.0,
       "exame_rx": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -1067,7 +1067,7 @@
       "fundamentos_basicos": 1.0,
       "exame_rx": 1.0,
       "subespecialidade_musculoesqueletico": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -1081,7 +1081,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_neuro": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -1095,7 +1095,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_neuro": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -1109,7 +1109,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_cabeca_pescoco": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -1123,7 +1123,7 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_cabeca_pescoco": 1.0,
-      "subespecialidade_geral": 0.2
+      "subespecialidade_geral": 1.5
     }
   },
   {
@@ -4090,7 +4090,7 @@
     "level": "Iniciante",
     "metrics": {
       "fundamentos_basicos": 1.0,
-      "subespecialidade_inteligencia_artificial": 3.0
+      "subespecialidade_inteligencia_artificial": 1.0
     }
   },
   {
@@ -4126,7 +4126,7 @@
     "level": "Iniciante",
     "metrics": {
       "fundamentos_basicos": 1.0,
-      "subespecialidade_inteligencia_artificial": 3.0
+      "subespecialidade_inteligencia_artificial": 1.0
     }
   },
   {
@@ -4138,7 +4138,7 @@
     "level": "Intermediário",
     "metrics": {
       "conteudo_intermediario": 1.0,
-      "subespecialidade_inteligencia_artificial": 3.0
+      "subespecialidade_inteligencia_artificial": 1.0
     }
   },
   {
@@ -4150,7 +4150,7 @@
     "level": "Intermediário",
     "metrics": {
       "conteudo_intermediario": 1.0,
-      "subespecialidade_inteligencia_artificial": 3.0
+      "subespecialidade_inteligencia_artificial": 1.0
     }
   },
   {
@@ -4162,7 +4162,7 @@
     "level": "Intermediário",
     "metrics": {
       "conteudo_intermediario": 1.0,
-      "subespecialidade_workstation": 3.0
+      "subespecialidade_workstation": 1.0
     }
   },
   {
@@ -4174,7 +4174,7 @@
     "level": "Intermediário",
     "metrics": {
       "conteudo_intermediario": 1.0,
-      "subespecialidade_ingles": 3.0
+      "subespecialidade_ingles": 1.0
     }
   },
   {
@@ -4186,7 +4186,7 @@
     "level": "Intermediário",
     "metrics": {
       "conteudo_intermediario": 1.0,
-      "subespecialidade_ingles": 3.0
+      "subespecialidade_ingles": 1.0
     }
   },
   {
@@ -4198,7 +4198,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "exame_petct": 3.0
+      "exame_petct": 1.0
     }
   },
   {
@@ -4210,7 +4210,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "exame_petct": 3.0
+      "exame_petct": 1.0
     }
   },
   {
@@ -4222,7 +4222,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "exame_petct": 3.0
+      "exame_petct": 1.0
     }
   },
   {
@@ -4234,7 +4234,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_ingles": 3.0
+      "subespecialidade_ingles": 1.0
     }
   },
   {
@@ -4246,7 +4246,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_ingles": 3.0
+      "subespecialidade_ingles": 1.0
     }
   },
   {
@@ -4258,7 +4258,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_ingles": 3.0
+      "subespecialidade_ingles": 1.0
     }
   },
   {
@@ -4270,7 +4270,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_ingles": 3.0
+      "subespecialidade_ingles": 1.0
     }
   },
   {
@@ -4282,7 +4282,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_ingles": 3.0
+      "subespecialidade_ingles": 1.0
     }
   },
   {
@@ -4294,7 +4294,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_financas": 3.0
+      "subespecialidade_financas": 1.0
     }
   },
   {
@@ -4306,7 +4306,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_financas": 3.0
+      "subespecialidade_financas": 1.0
     }
   },
   {
@@ -4318,7 +4318,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_financas": 3.0
+      "subespecialidade_financas": 1.0
     }
   },
   {
@@ -4330,7 +4330,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_financas": 3.0
+      "subespecialidade_financas": 1.0
     }
   },
   {
@@ -4342,7 +4342,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_financas": 3.0
+      "subespecialidade_financas": 1.0
     }
   },
   {
@@ -4354,7 +4354,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_financas": 3.0
+      "subespecialidade_financas": 1.0
     }
   },
   {
@@ -4366,7 +4366,7 @@
     "level": "Avançado",
     "metrics": {
       "conteudo_avancado": 1.0,
-      "subespecialidade_financas": 3.0
+      "subespecialidade_financas": 1.0
     }
   },
   {
@@ -4378,7 +4378,7 @@
     "level": "Iniciante",
     "metrics": {
       "fundamentos_basicos": 1.0,
-      "subespecialidade_pesquisa": 3.0
+      "subespecialidade_pesquisa": 1.0
     }
   },
   {
@@ -4390,7 +4390,7 @@
     "level": "Iniciante",
     "metrics": {
       "fundamentos_basicos": 1.0,
-      "subespecialidade_pesquisa": 3.0
+      "subespecialidade_pesquisa": 1.0
     }
   },
   {
@@ -4402,7 +4402,7 @@
     "level": "Iniciante",
     "metrics": {
       "fundamentos_basicos": 1.0,
-      "subespecialidade_pesquisa": 3.0
+      "subespecialidade_pesquisa": 1.0
     }
   },
   {
@@ -4414,7 +4414,7 @@
     "level": "Iniciante",
     "metrics": {
       "fundamentos_basicos": 1.0,
-      "subespecialidade_pesquisa": 3.0
+      "subespecialidade_pesquisa": 1.0
     }
   },
   {
@@ -4426,7 +4426,7 @@
     "level": "Iniciante",
     "metrics": {
       "fundamentos_basicos": 1.0,
-      "subespecialidade_pesquisa": 3.0
+      "subespecialidade_pesquisa": 1.0
     }
   },
   {
@@ -4438,7 +4438,7 @@
     "level": "Iniciante",
     "metrics": {
       "fundamentos_basicos": 1.0,
-      "subespecialidade_pesquisa": 3.0
+      "subespecialidade_pesquisa": 1.0
     }
   },
   {

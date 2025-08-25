@@ -55,7 +55,7 @@ METRICAS = {
     "subespecialidade_pesquisa": 0,                   # Metodologia científica e pesquisa em radiologia
     "subespecialidade_anatomia": 0,                   # Anatomia radiológica 
     "subespecialidade_reumatolgia": 0,                # Radiologia musculoesquelética e reumatológica
-    "subespecialidade_geral": 0,                      # Radiologia geral e multidisciplinar
+    "subespecialidade_geral": 1,                      # Radiologia geral e multidisciplinar
     "subespecialidade_mediastino": 0,                 # Radiologia do mediastino e estruturas cervicais7
     "subespecialidade_pratica_cetrus": 0,             # Prática com casos reais e discussões clínicas
 }

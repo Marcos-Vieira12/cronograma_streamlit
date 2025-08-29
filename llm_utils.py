@@ -86,6 +86,12 @@ def processar_resposta_aberta(pergunta: str, resposta: str, metricas: dict) -> d
         saida = resp.choices[0].message.content.strip().lower()
 
         # salvar debug em arquivo txt
+        with open("llm_debug.txt", "a", encoding="utf-8") as f:
+            f.write(f"Pergunta: {pergunta}\n")
+            f.write(f"Resposta do aluno: {resposta}\n")
+            f.write(f"Saída da LLM: {saida}\n")
+            f.write("-" * 40 + "\n")
+
 
         if saida == "nenhuma":
             return metricas

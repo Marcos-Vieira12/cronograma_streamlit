@@ -1,12 +1,9 @@
-# Definição das métricas iniciais para R1
-
+from llm_utils import processar_resposta_aberta
 
 def atualizar_metricas(respostas_aluno, metricas):
-    #ajuste das métricas com base no nivel
-
     r = respostas_aluno["respostas"]
 
-    # Exames iniciais
+    # Exames iniciais (fechada)
     q_exames = "Quais exames você tem mais contato hoje na residência e gostaria de aprofundar?"
     if q_exames in r:
         for exame in r[q_exames]:
@@ -25,7 +22,7 @@ def atualizar_metricas(respostas_aluno, metricas):
             elif exame == "Doppler":
                 metricas["exame_doppler"] += 2
             elif exame == "AngioTC / AngioRM":
-                metricas["exame_angiotc"] += 2
+                metricas["exame_angio"] += 2
             elif exame == "Fluoroscopia":
                 metricas["exame_fluoroscopia"] += 2
             elif exame == "Contrastados":
@@ -34,9 +31,8 @@ def atualizar_metricas(respostas_aluno, metricas):
                 metricas["exame_petct"] += 4
             elif exame == "HSG":
                 metricas["exame_hsg"] += 2
-            # Ignora "Outros"
 
-    # Subespecialidades no R3
+    # Subespecialidades (fechada)
     q_subs = "Quais subespecialidades você mais tem contato na Residência e gostaria de aprofundar?"
     if q_subs in r:
         for subesp in r[q_subs]:
@@ -60,5 +56,20 @@ def atualizar_metricas(respostas_aluno, metricas):
                 metricas["subespecialidade_urologia"] += 4
             elif subesp == "Oncologia":
                 metricas["subespecialidade_oncologia"] += 4
+
+    # Perguntas abertas com LLM
+    if "Já decidiu qual área quer seguir no R4/Fellow?" in r:
+        metricas = processar_resposta_aberta(
+            "Já decidiu qual área quer seguir no R4/Fellow?",
+            r["Já decidiu qual área quer seguir no R4/Fellow?"],
+            metricas
+        )
+
+    if "Tem algum exame de imagem ou subespecialidade específica que você quer dominar ou revisar agora no R3? Ou algo que você sente que ficou pra trás do R1/R2?" in r:
+        metricas = processar_resposta_aberta(
+            "Tem algum exame de imagem ou subespecialidade específica que você quer dominar ou revisar agora no R3? Ou algo que você sente que ficou pra trás do R1/R2?",
+            r["Tem algum exame de imagem ou subespecialidade específica que você quer dominar ou revisar agora no R3? Ou algo que você sente que ficou pra trás do R1/R2?"],
+            metricas
+        )
 
     return metricas

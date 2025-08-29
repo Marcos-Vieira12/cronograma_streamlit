@@ -1,11 +1,9 @@
-# Definição das métricas iniciais para R1
-
+from llm_utils import processar_resposta_aberta
 
 def atualizar_metricas(respostas_aluno, metricas):
-    #ajuste das métricas com base no nivel
     r = respostas_aluno["respostas"]
 
-    # Exames iniciais
+    # Exames iniciais (fechada)
     q_exames = "Quais exames você mais lauda/interpreta e tem contato no R2 atualmente?"
     if q_exames in r:
         for exame in r[q_exames]:
@@ -24,14 +22,13 @@ def atualizar_metricas(respostas_aluno, metricas):
             elif exame == "Doppler":
                 metricas["exame_doppler"] += 2
             elif exame == "AngioTC e AngioRM":
-                metricas["exame_angiotc"] += 2
+                metricas["exame_angio"] += 2
             elif exame == "Fluoroscopia":
                 metricas["exame_fluoroscopia"] += 2
             elif exame == "Contrastados":
                 metricas["exame_contrastados"] += 2
-            # Ignora "Outros"
 
-    # Subespecialidades no R2
+    # Subespecialidades (fechada)
     q_subs = "Quais subespecialidades você tem mais contato na Residência?"
     if q_subs in r:
         for subesp in r[q_subs]:
@@ -56,5 +53,19 @@ def atualizar_metricas(respostas_aluno, metricas):
             elif subesp == "Oncologia":
                 metricas["subespecialidade_oncologia"] += 4
 
+    # Perguntas abertas com LLM
+    if "Quais desses exames de imagem sente mais dificuldade no momento? Algo passou batido no R1?" in r:
+        metricas = processar_resposta_aberta(
+            "Quais desses exames de imagem sente mais dificuldade no momento? Algo passou batido no R1?",
+            r["Quais desses exames de imagem sente mais dificuldade no momento? Algo passou batido no R1?"],
+            metricas
+        )
+
+    if "Tem alguma subespecialidade que quer aprofundar mais ou revisar agora no R2?" in r:
+        metricas = processar_resposta_aberta(
+            "Tem alguma subespecialidade que quer aprofundar mais ou revisar agora no R2?",
+            r["Tem alguma subespecialidade que quer aprofundar mais ou revisar agora no R2?"],
+            metricas
+        )
 
     return metricas

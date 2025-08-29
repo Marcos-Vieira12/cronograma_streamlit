@@ -1,11 +1,10 @@
-# Definição das métricas iniciais para R1
-
+from llm_utils import processar_resposta_aberta
 
 def atualizar_metricas(respostas_aluno, metricas):
 
     r = respostas_aluno["respostas"]
 
-    # Exames iniciais
+    # Exames iniciais (fechada)
     if "Quais exames de imagem você já tem contato na prática ou vai ter nesse início de R1?" in r:
         for exame in r["Quais exames de imagem você já tem contato na prática ou vai ter nesse início de R1?"]:
             if exame == "RX":
@@ -21,7 +20,7 @@ def atualizar_metricas(respostas_aluno, metricas):
             elif exame == "RM":
                 metricas["exame_rm"] += 2
 
-    # Subespecialidades
+    # Subespecialidades (fechada)
     if "Quais subespecialidades você vai ter mais contato na Residência?" in r:
         for subesp in r["Quais subespecialidades você vai ter mais contato na Residência?"]:
             if subesp == "Neuro":
@@ -44,5 +43,20 @@ def atualizar_metricas(respostas_aluno, metricas):
                 metricas["subespecialidade_urologia"] += 4
             elif subesp == "Oncologia":
                 metricas["subespecialidade_oncologia"] += 4
+
+    # Perguntas abertas com LLM
+    if "Quais exames de imagem sente mais dificuldade no momento?" in r:
+        metricas = processar_resposta_aberta(
+            "Quais exames de imagem sente mais dificuldade no momento?",
+            r["Quais exames de imagem sente mais dificuldade no momento?"],
+            metricas
+        )
+
+    if "Quais temas você está vendo ou vai ver no primeiro ano de Residência?" in r:
+        metricas = processar_resposta_aberta(
+            "Quais temas você está vendo ou vai ver no primeiro ano de Residência?",
+            r["Quais temas você está vendo ou vai ver no primeiro ano de Residência?"],
+            metricas
+        )
 
     return metricas

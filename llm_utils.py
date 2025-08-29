@@ -4,7 +4,49 @@ from datetime import datetime
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-# ... (listas EXAMES e SUBESPECIALIDADES aqui) ...
+# Listas de categorias que queremos mapear
+EXAMES = [
+    "exame_rx",
+    "exame_usg",
+    "exame_densitometria",
+    "exame_mamografia",
+    "exame_tc",
+    "exame_rm",
+    "exame_doppler",
+    "exame_angio",
+    "exame_fluoroscopia",
+    "exame_contrastados",
+    "exame_petct",
+    "exame_hsg",
+    "exame_radiologia_geral",
+]
+
+SUBESPECIALIDADES = [
+    "subespecialidade_neuro",
+    "subespecialidade_torax",
+    "subespecialidade_abdome",
+    "subespecialidade_mama",
+    "subespecialidade_musculoesqueletico",
+    "subespecialidade_cabeca_pescoco",
+    "subespecialidade_pediatria",
+    "subespecialidade_gineco",
+    "subespecialidade_intervencao",
+    "subespecialidade_cardiovascular",
+    "subespecialidade_financas",
+    "subespecialidade_inteligencia_artificial",
+    "subespecialidade_workstation",
+    "subespecialidade_fisica_medica",
+    "subespecialidade_ingles",
+    "subespecialidade_gestao_radiologia",
+    "subespecialidade_telemedicina",
+    "subespecialidade_ensino_radiologia",
+    "subespecialidade_pesquisa",
+    "subespecialidade_anatomia",
+    "subespecialidade_reumatolgia",
+    "subespecialidade_geral",
+    "subespecialidade_mediastino",
+    "subespecialidade_pratica_cetrus",
+]
 
 def log_debug(pergunta, resposta, saida):
     """Salva logs em um arquivo local (llm_debug.txt)."""

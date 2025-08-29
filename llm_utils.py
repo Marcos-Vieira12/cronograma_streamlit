@@ -85,6 +85,8 @@ def processar_resposta_aberta(pergunta: str, resposta: str, metricas: dict) -> d
 
         saida = resp.choices[0].message.content.strip().lower()
 
+        # salvar debug em arquivo txt
+
         if saida == "nenhuma":
             return metricas
 

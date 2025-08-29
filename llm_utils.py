@@ -1,10 +1,11 @@
 import streamlit as st
 from openai import OpenAI
-from datetime import datetime
+import re
 
+# Cliente da OpenAI (pega do secrets do Streamlit)
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-# Listas de categorias que queremos mapear
+# Listas de categorias
 EXAMES = [
     "exame_rx",
     "exame_usg",
@@ -48,20 +49,8 @@ SUBESPECIALIDADES = [
     "subespecialidade_pratica_cetrus",
 ]
 
-def log_debug(pergunta, resposta, saida):
-    """Salva logs em um arquivo local (llm_debug.txt)."""
-    try:
-        with open("llm_debug.txt", "a", encoding="utf-8") as f:
-            f.write(f"[{datetime.now().isoformat()}]\n")
-            f.write(f"Pergunta: {pergunta}\n")
-            f.write(f"Resposta do aluno: {resposta}\n")
-            f.write(f"Saída LLM: {saida}\n")
-            f.write("="*40 + "\n")
-    except Exception as e:
-        st.warning(f"[LLM Debug] Erro ao salvar log: {e}")
-
-
 def processar_resposta_aberta(pergunta: str, resposta: str, metricas: dict) -> dict:
+    """Usa LLM para interpretar resposta aberta e atualizar métricas."""
     if not resposta or str(resposta).strip() == "":
         return metricas
 
@@ -89,16 +78,25 @@ def processar_resposta_aberta(pergunta: str, resposta: str, metricas: dict) -> d
             max_tokens=200,
         )
 
-        saida = resp.choices[0].message.content.strip().lower()
+        saida_raw = resp.choices[0].message.content.strip().lower()
 
-        # salva log
-        log_debug(pergunta, resposta, saida)
+        # limpeza básica
+        saida = re.sub(r"[^a-z0-9_, ]", "", saida_raw)
+        chaves = [s.strip() for s in saida.split(",") if s.strip()]
 
-        if saida == "nenhuma":
+        # Log no Streamlit para debug
+        st.write("#### [LLM Debug]")
+        st.json({
+            "pergunta": pergunta,
+            "resposta_aluno": resposta,
+            "saida_llm_raw": saida_raw,
+            "saida_llm_parseada": chaves,
+        })
+
+        if not chaves or "nenhuma" in chaves:
             return metricas
 
-        chaves = [s.strip() for s in saida.split(",")]
-
+        # Atualiza métricas
         for chave in chaves:
             if chave in EXAMES:
                 metricas[chave] = metricas.get(chave, 0) + 2

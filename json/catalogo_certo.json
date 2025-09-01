@@ -1254,7 +1254,8 @@
       "fundamentos_basicos": 1.0,
       "exame_usg": 1.0,
       "exame_tc": 1.0,
-      "subespecialidade_abdome": 1.0
+      "subespecialidade_abdome": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1268,7 +1269,8 @@
       "fundamentos_basicos": 1.0,
       "exame_usg": 1.0,
       "exame_tc": 1.0,
-      "subespecialidade_abdome": 1.0
+      "subespecialidade_abdome": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1283,7 +1285,8 @@
       "exame_usg": 1.0,
       "exame_tc": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_abdome": 1.0
+      "subespecialidade_abdome": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1298,7 +1301,8 @@
       "exame_rx": 1.0,
       "exame_usg": 1.0,
       "exame_tc": 1.0,
-      "subespecialidade_abdome": 1.0
+      "subespecialidade_abdome": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1312,7 +1316,8 @@
       "fundamentos_basicos": 1.0,
       "exame_rx": 1.0,
       "exame_tc": 1.0,
-      "subespecialidade_abdome": 1.0
+      "subespecialidade_abdome": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1353,7 +1358,8 @@
     "metrics": {
       "fundamentos_basicos": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_abdome": 1.0
+      "subespecialidade_abdome": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1379,7 +1385,8 @@
     "metrics": {
       "fundamentos_basicos": 1.0,
       "exame_angio": 1.0,
-      "subespecialidade_abdome": 1.0
+      "subespecialidade_abdome": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1434,7 +1441,8 @@
       "conteudo_intermediario": 1.0,
       "exame_tc": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_abdome": 1.0
+      "subespecialidade_abdome": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1448,7 +1456,8 @@
       "conteudo_intermediario": 1.0,
       "exame_tc": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_abdome": 1.0
+      "subespecialidade_abdome": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1488,7 +1497,8 @@
       "conteudo_intermediario": 1.0,
       "exame_usg": 1.0,
       "exame_tc": 1.0,
-      "subespecialidade_abdome": 1.0
+      "subespecialidade_abdome": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1502,7 +1512,8 @@
       "conteudo_intermediario": 1.0,
       "exame_rx": 1.0,
       "exame_tc": 1.0,
-      "subespecialidade_abdome": 1.0
+      "subespecialidade_abdome": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1597,7 +1608,8 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_mediastino": 1.0
+      "subespecialidade_mediastino": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1612,7 +1624,8 @@
       "exame_rx": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_mediastino": 1.0
+      "subespecialidade_mediastino": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1626,7 +1639,8 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_mediastino": 1.0
+      "subespecialidade_mediastino": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1654,7 +1668,8 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_mediastino": 1.0
+      "subespecialidade_mediastino": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1668,7 +1683,8 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_mediastino": 1.0
+      "subespecialidade_mediastino": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1741,7 +1757,8 @@
       "exame_rx": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_mediastino": 1.0
+      "subespecialidade_mediastino": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1798,7 +1815,8 @@
       "exame_rx": 1.0,
       "exame_tc": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_mediastino": 1.0
+      "subespecialidade_mediastino": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1812,7 +1830,8 @@
       "conteudo_avancado": 1.0,
       "exame_angio": 1.0,
       "subespecialidade_torax": 1.0,
-      "subespecialidade_mediastino": 1.0
+      "subespecialidade_mediastino": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1880,7 +1899,8 @@
       "exame_usg": 1.0,
       "exame_tc": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_cabeca_pescoco": 1.0
+      "subespecialidade_cabeca_pescoco": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1948,7 +1968,8 @@
     "metrics": {
       "conteudo_intermediario": 1.0,
       "exame_tc": 1.0,
-      "subespecialidade_cabeca_pescoco": 1.0
+      "subespecialidade_cabeca_pescoco": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -1962,7 +1983,8 @@
       "conteudo_intermediario": 1.0,
       "exame_tc": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_cabeca_pescoco": 1.0
+      "subespecialidade_cabeca_pescoco": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2068,7 +2090,8 @@
     "metrics": {
       "fundamentos_basicos": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_neuro": 1.0
+      "subespecialidade_neuro": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2082,7 +2105,8 @@
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_neuro": 1.0
+      "subespecialidade_neuro": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2095,7 +2119,8 @@
     "metrics": {
       "fundamentos_basicos": 1.0,
       "exame_tc": 1.0,
-      "subespecialidade_neuro": 1.0
+      "subespecialidade_neuro": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2147,7 +2172,8 @@
     "metrics": {
       "conteudo_intermediario": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_neuro": 1.0
+      "subespecialidade_neuro": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2187,7 +2213,8 @@
     "metrics": {
       "conteudo_intermediario": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_neuro": 1.0
+      "subespecialidade_neuro": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2200,7 +2227,8 @@
     "metrics": {
       "conteudo_intermediario": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_neuro": 1.0
+      "subespecialidade_neuro": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2214,7 +2242,8 @@
       "conteudo_intermediario": 1.0,
       "exame_tc": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_neuro": 1.0
+      "subespecialidade_neuro": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2745,7 +2774,8 @@
     "metrics": {
       "fundamentos_basicos": 1.0,
       "exame_rx": 1.0,
-      "subespecialidade_pediatria": 1.0
+      "subespecialidade_pediatria": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2758,7 +2788,8 @@
     "metrics": {
       "fundamentos_basicos": 1.0,
       "exame_usg": 1.0,
-      "subespecialidade_pediatria": 1.0
+      "subespecialidade_pediatria": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2771,7 +2802,8 @@
     "metrics": {
       "fundamentos_basicos": 1.0,
       "exame_usg": 1.0,
-      "subespecialidade_pediatria": 1.0
+      "subespecialidade_pediatria": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2786,7 +2818,8 @@
       "exame_rx": 1.0,
       "exame_usg": 1.0,
       "exame_tc": 1.0,
-      "subespecialidade_pediatria": 1.0
+      "subespecialidade_pediatria": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2802,7 +2835,8 @@
       "exame_usg": 1.0,
       "exame_tc": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_pediatria": 1.0
+      "subespecialidade_pediatria": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2818,7 +2852,8 @@
       "exame_usg": 1.0,
       "exame_tc": 1.0,
       "exame_rm": 1.0,
-      "subespecialidade_pediatria": 1.0
+      "subespecialidade_pediatria": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2831,7 +2866,8 @@
     "metrics": {
       "conteudo_intermediario": 1.0,
       "exame_usg": 1.0,
-      "subespecialidade_pediatria": 1.0
+      "subespecialidade_pediatria": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2846,7 +2882,8 @@
       "exame_rx": 1.0,
       "exame_usg": 1.0,
       "exame_tc": 1.0,
-      "subespecialidade_pediatria": 1.0
+      "subespecialidade_pediatria": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2914,7 +2951,8 @@
     "metrics": {
       "fundamentos_basicos": 1.0,
       "exame_mamografia": 1.0,
-      "subespecialidade_mama": 1.0
+      "subespecialidade_mama": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2927,7 +2965,8 @@
     "metrics": {
       "fundamentos_basicos": 1.0,
       "exame_mamografia": 1.0,
-      "subespecialidade_mama": 1.0
+      "subespecialidade_mama": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -2992,7 +3031,8 @@
     "metrics": {
       "conteudo_intermediario": 1.0,
       "exame_mamografia": 1.0,
-      "subespecialidade_mama": 1.0
+      "subespecialidade_mama": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3005,7 +3045,8 @@
     "metrics": {
       "conteudo_intermediario": 1.0,
       "exame_mamografia": 1.0,
-      "subespecialidade_mama": 1.0
+      "subespecialidade_mama": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3493,7 +3534,8 @@
       "fundamentos_basicos": 1.0,
       "exame_usg": 1.0,
       "exame_doppler": 0.5,
-      "subespecialidade_pratica_cetrus": 1.0
+      "subespecialidade_pratica_cetrus": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3507,7 +3549,8 @@
       "fundamentos_basicos": 1.0,
       "exame_usg": 1.0,
       "exame_doppler": 0.5,
-      "subespecialidade_pratica_cetrus": 1.0
+      "subespecialidade_pratica_cetrus": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3521,7 +3564,8 @@
       "fundamentos_basicos": 1.0,
       "exame_usg": 1.0,
       "exame_doppler": 0.5,
-      "subespecialidade_pratica_cetrus": 1.0
+      "subespecialidade_pratica_cetrus": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3715,7 +3759,8 @@
     "metrics": {
       "conteudo_intermediario": 1.0,
       "exame_usg": 1.0,
-      "subespecialidade_gineco": 1.0
+      "subespecialidade_gineco": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3729,7 +3774,8 @@
       "conteudo_intermediario": 1.0,
       "exame_usg": 1.0,
       "exame_doppler": 1.0,
-      "subespecialidade_gineco": 1.0
+      "subespecialidade_gineco": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3799,7 +3845,8 @@
       "exame_tc": 1.0,
       "exame_rm": 1.0,
       "exame_doppler": 1.0,
-      "subespecialidade_gineco": 1.0
+      "subespecialidade_gineco": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3815,7 +3862,8 @@
       "exame_tc": 1.0,
       "exame_rm": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_gineco": 1.0
+      "subespecialidade_gineco": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3831,7 +3879,8 @@
       "exame_rm": 1.0,
       "exame_hsg": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_gineco": 1.0
+      "subespecialidade_gineco": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3847,7 +3896,8 @@
       "exame_tc": 1.0,
       "exame_rm": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_gineco": 1.0
+      "subespecialidade_gineco": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3879,7 +3929,8 @@
       "exame_tc": 1.0,
       "exame_rm": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_gineco": 1.0
+      "subespecialidade_gineco": 1.0,
+      "coringa": 1.0
     }
   },
   {
@@ -3911,7 +3962,8 @@
       "exame_tc": 1.0,
       "exame_rm": 1.0,
       "subespecialidade_abdome": 1.0,
-      "subespecialidade_gineco": 1.0
+      "subespecialidade_gineco": 1.0,
+      "coringa": 1.0
     }
   },
   {

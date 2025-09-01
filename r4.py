@@ -28,7 +28,7 @@ def atualizar_metricas(respostas_aluno, metricas):
             elif exame == "Contrastados":
                 metricas["exame_contrastados"] += 2
             elif exame == "PET-CT":
-                metricas["exame_petct"] += 2
+                metricas["exame_petct"] += 4
             elif exame == "HSG":
                 metricas["exame_hsg"] += 2
 

@@ -130,7 +130,7 @@ if gerar:
             numero_semanas=numero_semanas,
             tempo_min_semana=tempo_min_semana,
             frac_limite_max=0.90,
-            peso_min_intermediario=3.5
+            peso_min_intermediario=6.0
         )
 
         # 6) Exibir cronograma

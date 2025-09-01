@@ -44,18 +44,20 @@ METRICAS = {
     "subespecialidade_intervencao": 0,
     "subespecialidade_cardiovascular": 0,
 
-    "subespecialidade_financas": 0,                   # Gestão financeira e investimentos para médicos
-    "subespecialidade_inteligencia_artificial": 0,    # Aplicações de IA na radiologia
-    "subespecialidade_workstation": 0,                # Softwares e estações de trabalho para diagnóstico
-    "subespecialidade_fisica_medica": 0,              # Física aplicada a exames de imagem
-    "subespecialidade_ingles": 0,                     # Inglês técnico para radiologia
-    "subespecialidade_gestao_radiologia": 0,          # Gestão, liderança e administração em serviços de radiologia
-    "subespecialidade_telemedicina": 0,               # Saúde digital, laudos e atendimento remoto
-    "subespecialidade_ensino_radiologia": 0,          # Didática, preceptoria e formação de residentes
-    "subespecialidade_pesquisa": 0,                   # Metodologia científica e pesquisa em radiologia
-    "subespecialidade_anatomia": 0,                   # Anatomia radiológica 
-    "subespecialidade_reumatolgia": 0,                # Radiologia musculoesquelética e reumatológica
-    "subespecialidade_geral": 1,                      # Radiologia geral e multidisciplinar
-    "subespecialidade_mediastino": 0,                 # Radiologia do mediastino e estruturas cervicais7
-    "subespecialidade_pratica_cetrus": 0,             # Prática com casos reais e discussões clínicas
-}
+    "subespecialidade_financas": 0,                     
+    "subespecialidade_inteligencia_artificial": 0,      
+    "subespecialidade_workstation": 0,                  
+    "subespecialidade_fisica_medica": 0,                
+    "subespecialidade_ingles": 0,                       
+    "subespecialidade_gestao_radiologia": 0,            
+    "subespecialidade_telemedicina": 0,                 
+    "subespecialidade_ensino_radiologia": 0,            
+    "subespecialidade_pesquisa": 0,                     
+    "subespecialidade_anatomia": 0,                     
+    "subespecialidade_reumatolgia": 0,                  
+    "subespecialidade_geral": 1,                        
+    "subespecialidade_mediastino": 0,                   
+    "subespecialidade_pratica_cetrus": 0,               
+
+    "coringa": 2
+    }

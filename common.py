@@ -17,19 +17,21 @@ def configurar_metricas_comuns(metricas: Dict[str, float], respostas_aluno: Dict
 
     # Peso base por nível
     if nivel == "R1":
-        metricas["fundamentos_basicos"] += 1.2
-        metricas["conteudo_intermediario"] += 0.3
+        metricas["fundamentos_basicos"] += 2.0
+        #metricas["conteudo_intermediario"] += 1.0
+        metricas["conteudo_avancado"] -=2.0
     elif nivel == "R2":
-        metricas["fundamentos_basicos"] += 1
-        metricas["conteudo_intermediario"] += 0.5
+        #metricas["fundamentos_basicos"] += 1.0
+        metricas["conteudo_intermediario"] += 2.0
+        #metricas["conteudo_avancado"] += 1.0
     elif nivel == "R3":
-        metricas["fundamentos_basicos"] += 0.7
-        metricas["conteudo_intermediario"] += 0.6
-        metricas["conteudo_avancado"] += 0.2
+        metricas["fundamentos_basicos"] -= 2.0
+        #metricas["conteudo_intermediario"] += 0.0
+        metricas["conteudo_avancado"] += 2.0
     elif nivel == "R4 / medico radiologista":
-        metricas["fundamentos_basicos"] += 0.51
-        metricas["conteudo_intermediario"] += 0.50
-        metricas["conteudo_avancado"] += 0.50
+        metricas["fundamentos_basicos"] -= 2.0
+        #metricas["conteudo_intermediario"] +=0.0
+        metricas["conteudo_avancado"] += 2.0
 
     # Objetivos (comum a todos os níveis)
     objetivos = _to_list(r.get("Quais os seus objetivos com o curso RadioClub?"))
@@ -37,9 +39,9 @@ def configurar_metricas_comuns(metricas: Dict[str, float], respostas_aluno: Dict
     if "Aprofundar conhecimentos na minha subespecialidade atual" in objetivos:
         metricas["foco_subespecialidade"] += 0.5
     if "Me atualizar com as inovações e protocolos mais recentes" in objetivos:
-        metricas["exame_petct"] += 4
+        metricas["exame_petct"] += 6
     if "Praticar com casos reais e discussões clínicas" in objetivos:
-        metricas["discussoes_ao_vivo"] += 2
+        metricas["discussoes_ao_vivo"] += 4
 
     # Carga horária
     if "Quanto tempo, por semana, você consegue dedicar aos estudos com o RadioClub?" in r:

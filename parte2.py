@@ -31,10 +31,7 @@ PERGUNTAS_R2 = {
 }
 
 PERGUNTAS_R3 = {
-    "Já decidiu qual área quer seguir no R4/Fellow?": {
-        "tipo": "single",
-        "opcoes": ["ainda não tenho certeza", "sim"]
-    },
+    "Já decidiu qual área quer seguir no R4/Fellow? se sim, qual?":"aberta",
     "Quais exames você tem mais contato hoje na residência e gostaria de aprofundar?": [
         "RX", "USG Geral", "Densitometria Óssea", "Mamografia", "TC", "RM",
         "Doppler", "AngioTC / AngioRM", "Fluoroscopia", "Contrastados",
@@ -109,35 +106,15 @@ def _render_field(pergunta: str, spec, respostas_dict: dict, nivel: str):
     elif isinstance(spec, dict) and spec.get("tipo") == "single":
         opcoes = spec.get("opcoes", [])
         atual = respostas_dict.get(pergunta, None)
-
-        # Se já havia um texto custom (ex.: "Neurointervenção"), pré-seleciona "sim"
-        # e pré-carrega o text_input com esse valor
-        if atual and atual not in opcoes and "sim" in opcoes:
-            default_index = opcoes.index("sim")
-            default_text = str(atual)
-        else:
-            default_index = (opcoes.index(atual) if (isinstance(atual, str) and atual in opcoes) else 0)
-            default_text = ""
-
+        if isinstance(atual, list):
+            atual = next((x for x in atual if x in opcoes), None)
         selecionado = st.selectbox(
             pergunta,
             options=opcoes,
-            index=default_index,
+            index=(opcoes.index(atual) if atual in opcoes else 0),
             key=f"sb_{nivel}_{slug}"
         )
-
-        # Se a pessoa escolheu "sim", abre um campo de texto
-        if selecionado == "sim":
-            typed = st.text_input(
-                "Qual?",
-                value=default_text,
-                key=f"ti_{nivel}_{slug}_qual"
-            ).strip()
-            # Se digitou algo, salva o texto; senão, salva a opção escolhida
-            respostas_dict[pergunta] = typed if typed else selecionado
-        else:
-            respostas_dict[pergunta] = selecionado
-
+        respostas_dict[pergunta] = selecionado
 
 def render_parte2(form_state: dict):
     st.header("Parte 2 – Conteúdo específico por nível")

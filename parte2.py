@@ -33,7 +33,7 @@ PERGUNTAS_R2 = {
 PERGUNTAS_R3 = {
     "Já decidiu qual área quer seguir no R4/Fellow?": {
         "tipo": "single",
-        "opcoes": ["ainda não tenho certeza", "sim, qual?"]
+        "opcoes": ["ainda não tenho certeza", "sim"]
     },
     "Quais exames você tem mais contato hoje na residência e gostaria de aprofundar?": [
         "RX", "USG Geral", "Densitometria Óssea", "Mamografia", "TC", "RM",
@@ -110,10 +110,10 @@ def _render_field(pergunta: str, spec, respostas_dict: dict, nivel: str):
         opcoes = spec.get("opcoes", [])
         atual = respostas_dict.get(pergunta, None)
 
-        # Se já havia um texto custom (ex.: "Neurointervenção"), pré-seleciona "sim, qual?"
+        # Se já havia um texto custom (ex.: "Neurointervenção"), pré-seleciona "sim"
         # e pré-carrega o text_input com esse valor
-        if atual and atual not in opcoes and "sim, qual?" in opcoes:
-            default_index = opcoes.index("sim, qual?")
+        if atual and atual not in opcoes and "sim" in opcoes:
+            default_index = opcoes.index("sim")
             default_text = str(atual)
         else:
             default_index = (opcoes.index(atual) if (isinstance(atual, str) and atual in opcoes) else 0)
@@ -126,10 +126,10 @@ def _render_field(pergunta: str, spec, respostas_dict: dict, nivel: str):
             key=f"sb_{nivel}_{slug}"
         )
 
-        # Se a pessoa escolheu "sim, qual?", abre um campo de texto
-        if selecionado == "sim, qual?":
+        # Se a pessoa escolheu "sim", abre um campo de texto
+        if selecionado == "sim":
             typed = st.text_input(
-                "Qual área?",
+                "Qual?",
                 value=default_text,
                 key=f"ti_{nivel}_{slug}_qual"
             ).strip()

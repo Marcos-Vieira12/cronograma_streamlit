@@ -58,10 +58,10 @@ def atualizar_metricas(respostas_aluno, metricas):
                 metricas["subespecialidade_oncologia"] += 4
 
     # Perguntas abertas com LLM
-    if "Já decidiu qual área quer seguir no R4/Fellow?" in r:
+    if "Já decidiu qual área quer seguir no R4/Fellow? se sim, qual?" in r:
         metricas = processar_resposta_aberta(
-            "Já decidiu qual área quer seguir no R4/Fellow?",
-            r["Já decidiu qual área quer seguir no R4/Fellow?"],
+            "Já decidiu qual área quer seguir no R4/Fellow? se sim, qual?",
+            r["Já decidiu qual área quer seguir no R4/Fellow? se sim, qual?"],
             metricas
         )
 

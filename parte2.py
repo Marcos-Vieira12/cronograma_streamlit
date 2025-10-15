@@ -109,15 +109,35 @@ def _render_field(pergunta: str, spec, respostas_dict: dict, nivel: str):
     elif isinstance(spec, dict) and spec.get("tipo") == "single":
         opcoes = spec.get("opcoes", [])
         atual = respostas_dict.get(pergunta, None)
-        if isinstance(atual, list):
-            atual = next((x for x in atual if x in opcoes), None)
+
+        # Se já havia um texto custom (ex.: "Neurointervenção"), pré-seleciona "sim, qual?"
+        # e pré-carrega o text_input com esse valor
+        if atual and atual not in opcoes and "sim, qual?" in opcoes:
+            default_index = opcoes.index("sim, qual?")
+            default_text = str(atual)
+        else:
+            default_index = (opcoes.index(atual) if (isinstance(atual, str) and atual in opcoes) else 0)
+            default_text = ""
+
         selecionado = st.selectbox(
             pergunta,
             options=opcoes,
-            index=(opcoes.index(atual) if atual in opcoes else 0),
+            index=default_index,
             key=f"sb_{nivel}_{slug}"
         )
-        respostas_dict[pergunta] = selecionado
+
+        # Se a pessoa escolheu "sim, qual?", abre um campo de texto
+        if selecionado == "sim, qual?":
+            typed = st.text_input(
+                "Qual área?",
+                value=default_text,
+                key=f"ti_{nivel}_{slug}_qual"
+            ).strip()
+            # Se digitou algo, salva o texto; senão, salva a opção escolhida
+            respostas_dict[pergunta] = typed if typed else selecionado
+        else:
+            respostas_dict[pergunta] = selecionado
+
 
 def render_parte2(form_state: dict):
     st.header("Parte 2 – Conteúdo específico por nível")

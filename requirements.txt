@@ -2,5 +2,5 @@ streamlit
 reportlab
 openpyxl
 openai
-dotenv
+python-dotenv>=1.0.1
 

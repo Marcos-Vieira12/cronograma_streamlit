@@ -3,7 +3,7 @@ from openai import OpenAI
 import re
 
 # Cliente da OpenAI (pega do secrets do Streamlit)
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Listas de categorias
 EXAMES = [
